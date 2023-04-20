@@ -52,7 +52,7 @@ const handleGuess = () => {
 guessBtn.setAttribute("onclick", 'handleGuess()');
 
 const updateGallowsImage = () => {
-    let imgNum = numGuesses;
+    let imgNum = numGuesses + 1;
     imageElement.setAttribute("src", `img/gallows/${imgNum}.png`);
 };
 
