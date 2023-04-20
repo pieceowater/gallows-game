@@ -1,0 +1,66 @@
+.container-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+.word-container {
+    margin-bottom: 20px;
+}
+
+.guess-container {
+    margin-bottom: 20px;
+}
+
+.result-container {
+    margin-bottom: 20px;
+}
+
+
+
+.gallows-img {
+    margin-top: 20px;
+}
+
+.word {
+    font-size: 40px;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.good-result {
+    color: rgb(27, 213, 27);
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    width: 100px;
+}
+
+button {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #40C2D7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #38a6b7;
+}
