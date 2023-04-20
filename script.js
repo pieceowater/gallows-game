@@ -40,6 +40,7 @@ const handleGuess = () => {
             wordElement.innerText = word.toUpperCase();
             guessBtn.innerText = "Refresh";
             guessBtn.setAttribute('onclick', 'window.location.reload()');
+            updateGallowsImage();
         } else {
             resultElement.classList.remove('good-result')
             resultElement.innerText = `Incorrect Guess.\n${maxGuesses - numGuesses} guesses remaining.`;
