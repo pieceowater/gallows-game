@@ -37,7 +37,7 @@ const handleGuess = () => {
         if (numGuesses === maxGuesses) {
             resultElement.classList.remove('good-result')
             resultElement.innerText = "You Lose!";
-            wordElement.innerText = word;
+            wordElement.innerText = word.toUpperCase();
             guessBtn.innerText = "Refresh";
             guessBtn.setAttribute('onclick', 'window.location.reload()');
         } else {
