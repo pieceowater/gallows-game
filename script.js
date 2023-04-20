@@ -3,7 +3,7 @@ let word = words[Math.floor(Math.random() * words.length)];
 let wordArr = [...word];
 let guessedLetters = [];
 let numGuesses = 0;
-const maxGuesses = 6;
+const maxGuesses = 5;
 
 const wordElement = document.querySelector(".word");
 const guessElement = document.querySelector("#guess");
