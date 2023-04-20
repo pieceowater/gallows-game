@@ -1,5 +1,5 @@
 const words = ["apple", "banana", "cherry", "grape", "kiwi", "lemon", "orange", "pear", "pineapple", "strawberry", "watermelon", "blueberry", "blackberry", "raspberry", "peach", "mango", "pomegranate", "apricot", "avocado", "coconut", "fig", "guava", "lime", "lychee", "melon", "plum", "tangerine", "nectarine", "passionfruit", "persimmon", "dragonfruit", "starfruit"];
-let word = words[Math.floor(Math.random() * words.length)];
+let word = words[Math.floor(Math.random() * words.length)].toLowerCase();
 let wordArr = [...word];
 let guessedLetters = [];
 let numGuesses = 0;
@@ -12,7 +12,7 @@ const resultElement = document.querySelector(".result");
 const imageElement = document.querySelector(".gallows-img img");
 
 const updateDisplayWord = () => {
-    let displayWord = wordArr.map(letter => guessedLetters.includes(letter) ? letter : '_').join(' ');
+    let displayWord = wordArr.map(letter => guessedLetters.includes(letter) ? letter.toUpperCase() : '_').join(' ');
     wordElement.innerText = displayWord;
 };
 
